@@ -1,4 +1,4 @@
-body {background-color: azure;
+body {background-color: white;
     font-family: "Poppins", sans-serif;
        
 }
@@ -10,6 +10,7 @@ body {background-color: azure;
     justify-content: center;
     align-items: center;
     gap: 50px;
+    list-style:none ;
 }
 .listamenu{
     display: flex;
@@ -30,11 +31,36 @@ body {background-color: azure;
 .listamenu a:hover {
     color:darkcyan
 }
+.banner{
+    border: solid red;
+    width: 100px; ;
+    height: 80px;   
+}
 
-.logo{
-    width: 100px;
+.banner img {
+    width: 500px;
     height: 100px;
+    object-fit: fill;
+    
+}
+.logo{
+    width: 200px;
+    height: 200px;
 }
 .titulos{
     text-align: center;
+}
+
+footer{
+    border: 5px solid aqua ;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 250px;
+}
+.logoAbajo{
+    width: 200px;
+    height: 200px;
 }

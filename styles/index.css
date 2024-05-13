@@ -13,6 +13,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     display: flex;
+    
 
 }
 
@@ -56,7 +57,7 @@ transform:scale(1.2)
     text-align: left;
     font-weight:bold ;
     font-size: 40px;
-    margin-top: 10%;
+    margin-top: 5%;
 
 }
 .titulos h2{
@@ -85,14 +86,15 @@ section {
     font-size: 20px;
 }
 footer{
-    
+    position: absolute;
+    left: 80px;
+    top: 620px;
     width: 100%;
     height: auto;
     display:flex;
     align-items: center;
     gap: 50px;
-    margin-left: 5px;
-    margin-right: 5px;
+    
     
 }
 .logoAbajo{
@@ -102,25 +104,23 @@ footer{
 
 .footerS{
     color: #d0dc6a;
-    padding-left:60% ;
+   
 }
 .footerT{
     color: white;
-    padding-left:100% ;
-    margin-top: 30%;
-    margin-bottom: auto;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 30%;
+   
 }
 
+
 .boton button{
-    width: 50%;
+    width: 10%;
     background-color: #d0dc6a;
     font-weight: bold;
-    display:block;
-    margin-top: 8%;
-    margin-left: 5%;
-
+    position: absolute;
+    left: 84px;
+    top: 560px;
+    
 }
 
 .boton .estiloB{

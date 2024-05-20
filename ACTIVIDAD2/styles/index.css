@@ -1,0 +1,223 @@
+/* Importaciones - fuentes */
+@import url('https://fonts.cdnfonts.com/css/ysabeau-sc');
+@import url('https://fonts.cdnfonts.com/css/quito');
+
+/* Establecer las variables en nuestro css
+    -paleta de colores
+    -tipografías
+    -medidas (opcional)
+*/
+
+
+/* root -> hace referencia a mi archivo raíz (<!DOCTYPE html>)*/
+:root {
+    /* paleta de colores */
+    --colorFondo: #D8C37F;
+    --colorEnfasis1: #A4AE20;
+    --colorEnfasis2: #C57023;
+    --colorEnfasis3: #7B361A;
+    --colorText: #d9d09e85;
+    --colorText2: #19160A;
+
+    /* Fuentes */
+    --textTitle: 'Ysabeau SC', sans-serif;
+    --textContent: 'Quito', sans-serif;
+}
+
+/* condiciones o estilos iniciales de mi página */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+   
+}
+
+body{
+    background-color: var(--colorFondo);
+    width: 100vw;
+    height: auto;
+    /* Overflow -> me sirve para definir qué pasa con el contenido que sobresale de mi contenedor */
+    overflow-x:hidden;
+    
+}
+
+
+/* ----------------HEADER--------------- */
+
+header{
+    width: 100%; 
+    height:100px;
+
+}
+
+.menuNavegacion{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    right:0;
+    background-color: var(--colorEnfasis3);
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+.logo{
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-left: 15px;
+   
+}
+
+.logo a{
+    gap:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    font-weight: bold;
+    color: var(--colorText);
+    text-decoration: none;
+}
+.span-logo{
+    color: var(--colorEnfasis1);
+}
+
+.img-logo{
+    width: auto;
+    height: 70px;
+    padding: 0 4px;
+    
+    
+}
+
+.listaMenu{
+  
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  align-items: center;
+  font-weight: bold;
+  font-size: x-large;
+  
+}
+
+.listaMenu a{
+    color:var(--colorText);
+    text-decoration: none;
+    padding-right: 10px;
+    margin-right: 40px;
+    
+}
+
+.listaMenu a:hover{
+    color: #A4AE20;
+}
+
+.p-logo{
+    width: 150px;
+    text-align: left;
+}
+
+/* ----------------MAIN--------------- */
+
+main{
+    width: 100%;
+    padding: 100px;
+}
+
+.contenedorPrincipal h1{
+    font-family: var(--textTitle);
+    color: var(--colorEnfasis3);
+    font-size: x-large;
+}
+
+.contenedorImagenes{
+    border: 3px solid var(--colorEnfasis3);
+    margin-top: 50px;
+    border-radius: 50px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns:repeat(4,1fr) ;
+    grid-template-rows:repeat(4, 1fr) ;
+
+}
+
+.contenedorImagenes img{
+    width:100% ;
+    height:100% ;
+}
+
+.imagenes{
+    display:grid;
+    position:relative
+}
+
+.parrafo-img{
+    position:absolute;
+    width:100% ;
+    height: 100%;
+    display:flex;
+    justify-content:center ;
+    align-items: center;
+    background-color: #d8c37faa;
+    padding: 25px;
+    opacity: 0;
+
+
+}
+
+.parrafo-img:hover{
+    opacity: 1;
+    cursor:pointer;
+    transition:all 0.4s;
+
+}
+
+.img1{
+    grid-row:1/3 ;
+   
+}
+.img2{
+
+}
+.img3{
+    grid-row: 1/3;
+    grid-column: 2/4;
+
+}
+.img4{
+
+}
+.img5{
+
+}
+.img6{
+    
+}
+
+/* ----------------FOOTER--------------- */
+footer{
+    background-color: var(--colorEnfasis3);
+    height: 100px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: var(--colorText);
+    font-size: xx-large;
+   
+
+}
+
+.contenedorGrid{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 5px;
+
+}
